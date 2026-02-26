@@ -16,7 +16,10 @@ All the datasets you will need to train the models will be available in this web
 - **Task:** Train a custom CNN with classifies the image into one of the 26 letters. Feel free to use any existing architectures, but code it from scratch using PyTorch. But experiment with different kernels, block sizes and other parameters. Also ensure that your model doesn’t overfit, so make sure to keep a train validation split and judge accordingly. This would be the base of the entire model, so try to get some good accuracies.
 - **Output:** Save the weights and push that file along with your model code to your branch.
 
-<h2>Task 2: Temporal Sequence Learning (LSTM) - Deadline :  9th March</h2>
+<h2>Task 2: Temporal Sequence Learning (LSTM)</h2>
+
+**Deadline:** 9th March
+
 - **Goal:** Incorporate temporal knowledge with LSTMs.
 - **Dataset:** Use ASL_dynamic.zip.
 - **Task:** Initialize a model that processes the output from the CNN by an LSTM and classifies it using an MLP head. Load the weights into the CNN backbone and freeze them(set requires_grad=False).
@@ -26,7 +29,10 @@ All the datasets you will need to train the models will be available in this web
     3. FC Head: Classifies the final motion into gestures or letters.
 - **Output:** Save the weights and push that file along with your model code to your branch.
 
-<h2>Task 3: Integration & Real-Time Inference - Deadline :  16th March</h2>
+<h2>Task 3: Integration & Real-Time Inference</h2>
+
+**Deadline:** 16th March
+
 - **Goal:** Deploy the model to work on live video.
 - **Task:** Create a "Sliding Window" buffer.
 - **Logic:** As new frames come in from a webcam, maintain a queue of the last 16 frames. Every time a new frame enters, the model predicts the gesture based on that 16-frame window.
